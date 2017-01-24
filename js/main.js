@@ -4,7 +4,7 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
         var window_height = $(window).height();
 
-        if(scroll >= window_height) 
+        if(scroll >= window_height - $('header').height())
         {
             $("header").addClass("header-fixed");
         } 
